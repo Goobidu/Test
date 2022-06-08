@@ -7,11 +7,16 @@ using (StreamReader sr = new StreamReader("input.txt"))
     int count = 0;
     while ((line = sr.ReadLine()) != null)
     {
-        string[] parts = line.Split(';');
-
+        string[] parts = line.Split('\n');
         for (int i = 0; i < parts.Length; i++)
         {
-            if (parts[i] == " true")
+            Console.WriteLine(parts[i]);
+        }
+        for (int i = 0; i < parts.Length; i++)
+        {
+            string[] vs = parts[i].Split(';');
+           string inp = vs[5].Trim(' ');
+            if (inp == "true")
             {
                 count++;
             }
