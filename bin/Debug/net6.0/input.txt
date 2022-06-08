@@ -1,0 +1,5 @@
+1;351;false;2;INV; true;155
+2;412;true;2;VAL; true;632
+3;868;false;0;INV;false;512
+4;111;false;1;NAN; true;711
+5;738;true;3;INV;false;67
